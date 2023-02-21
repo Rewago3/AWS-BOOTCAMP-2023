@@ -16,3 +16,9 @@ Succeeded in creating one by giving account id directly eg --account-id 01155719
 
 ### Recreate Logical Architectural Deisgn
 
+#### Crudder Logical Diagram
+
+![Crudder Logical Diagram](/_docs/assets/Crudder_Logical_Diagram.svg)
+
+
+[Lucid Charts Link](https://lucid.app/lucidchart/e5ff5c00-4c59-4198-aea0-ac119b512d70/edit?invitationId=inv_f5dcba4b-cc9d-4c73-a357-a1f7454fd2ce)
