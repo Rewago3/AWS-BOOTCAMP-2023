@@ -4,10 +4,10 @@ services:
     environment:
       #CONNECTION_URL: "${CONNECTION_URL}"
       CONNECTION_URL: "postgresql://postgres:password@db:5432/cruddur"
-      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
-      REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
-      REACT_APP_AWS_USER_POOLS_ID: "ca-central-1_1AVoOK9E0"
-      REACT_APP_CLIENT_ID: "29gn7ih1fc5e4l18omje30nsg3"
+      #REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      #REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
+      #REACT_APP_AWS_USER_POOLS_ID: "ca-central-1_1AVoOK9E0"
+      #REACT_APP_CLIENT_ID: "29gn7ih1fc5e4l18omje30nsg3"
       FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
       BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
       OTEL_SERVICE_NAME: "backend-flask"
@@ -27,6 +27,10 @@ services:
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_USER_POOLS_ID: "ca-central-1_oEav1bOoz"
+      REACT_APP_CLIENT_ID: "6dd1cp9ms9o01mnhn6pibf68ul"
     build: ./frontend-react-js
     ports:
       - "3000:3000"
